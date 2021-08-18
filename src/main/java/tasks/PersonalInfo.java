@@ -31,9 +31,9 @@ public class PersonalInfo implements Task {
                 Enter.theValue(firstName).into(PersonalInfoPage.INPUT_FNAME),
                 Enter.theValue(lastName).into(PersonalInfoPage.INPUT_LNAME),
                 Enter.theValue(email).into(PersonalInfoPage.INPUT_EMAIL),
-                SelectFromOptions.byValue("number:6").from(PersonalInfoPage.SELECT_MONTH),
-                SelectFromOptions.byValue("number:12").from(PersonalInfoPage.SELECT_DAY),
-                SelectFromOptions.byValue("number:2002").from(PersonalInfoPage.SELECT_YEAR),
+                SelectFromOptions.byValue("number:10").from(PersonalInfoPage.SELECT_MONTH),
+                SelectFromOptions.byValue("number:21").from(PersonalInfoPage.SELECT_DAY),
+                SelectFromOptions.byValue("number:1996").from(PersonalInfoPage.SELECT_YEAR),
                 Click.on(PersonalInfoPage.BUTTON_LOCATION)
         );
 
