@@ -37,9 +37,11 @@ public class RetoTecnicoStepDefinitions {
         );
     }
 
-    @Then("^He finds a welcome message to utest\\.com$")
-    public void heFindsAWelcomeMessageToUtestCom(List<retoTecnicoData> data) throws Exception {
+    @Then("^The find the button to complete registration available$")
+    public void theFindTheButtonToCompleteRegistrationAvailable(List<retoTecnicoData> data) throws Exception {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(data.get(0).getStrWelcomeMessage())));
     }
+
+
 
 }

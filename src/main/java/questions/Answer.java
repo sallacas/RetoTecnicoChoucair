@@ -2,7 +2,7 @@ package questions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.questions.Text;
+import net.serenitybdd.screenplay.questions.*;
 import userinterface.FinalInfoPage;
 
 public class Answer implements Question<Boolean>{
@@ -21,8 +21,9 @@ public class Answer implements Question<Boolean>{
     @Override
     public Boolean answeredBy(Actor actor) {
         boolean result;
-        String welcomeMessage = Text.of(FinalInfoPage.WELCOME_MESSAGE).viewedBy(actor).asString();
-        if (question.equals(welcomeMessage)){
+        String verify = Text.of(FinalInfoPage.FORM_VERIFY).viewedBy(actor).asString();
+        System.out.println("-------------------" + verify + "-------------------------------------------");
+        if (question.equals(verify)){
             result = true;
         } else {
             result = false;

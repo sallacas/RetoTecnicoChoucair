@@ -28,8 +28,7 @@ public class FinalInfo implements Task {
                 Click.on(FinalInfoPage.LOADER),
                 Enter.theValue(password).into(FinalInfoPage.INPUT_CONFIRMPASS),
                 Click.on(FinalInfoPage.INPUT_PRIVACITY),
-                Click.on(FinalInfoPage.LOADER),
-                Click.on(FinalInfoPage.BUTTON_COMPLETE)
+                Click.on(FinalInfoPage.LOADER)
         );
     }
 }
